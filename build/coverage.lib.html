@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-whatwg-fetch/whatwg-fetch/fetch.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-whatwg-fetch/node_modules/whatwg-fetch/fetch.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-whatwg-fetch">npmtest-whatwg-fetch (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-whatwg-fetch/whatwg-fetch/fetch.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-whatwg-fetch/node_modules/whatwg-fetch/fetch.js</span></h1>
     <h2>
         
         Statements: <span class="metric">18.73% <small>(50 / 267)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-whatwg-fetch/whatwg-fetch/</a> » fetch.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-whatwg-fetch/node_modules/whatwg-fetch/</a> &#187; fetch.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -1139,27 +1141,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function(self) {
   'use strict';
 &nbsp;
-  <span class="missing-if-branch" title="if path not taken">I</span>if (self.fetch) {
-<span class="cstat-no" title="statement not covered">    return</span>
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (self.fetch) {
+<span class="cstat-no" title="statement not covered" >    return</span>
   }
 &nbsp;
   var support = {
     searchParams: 'URLSearchParams' in self,
-    iterable: 'Symbol' in self &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered">'iterator' in Symbol,</span>
-    blob: 'FileReader' in self &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered">'Blob' in self </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered">(<span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">      try {</span>
-<span class="cstat-no" title="statement not covered">        new Blob()</span>
-<span class="cstat-no" title="statement not covered">        return true</span>
+    iterable: 'Symbol' in self &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >'iterator' in Symbol,</span>
+    blob: 'FileReader' in self &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >'Blob' in self </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >      try {</span>
+<span class="cstat-no" title="statement not covered" >        new Blob()</span>
+<span class="cstat-no" title="statement not covered" >        return true</span>
       } catch(e) {
-<span class="cstat-no" title="statement not covered">        return false</span>
+<span class="cstat-no" title="statement not covered" >        return false</span>
       }
     })(),
     formData: 'FormData' in self,
     arrayBuffer: 'ArrayBuffer' in self
   }
 &nbsp;
-  <span class="missing-if-branch" title="if path not taken">I</span>if (support.arrayBuffer) {
-<span class="cstat-no" title="statement not covered">    var viewClasses = [</span>
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (support.arrayBuffer) {
+<span class="cstat-no" title="statement not covered" >    var viewClasses = [</span>
       '[object Int8Array]',
       '[object Uint8Array]',
       '[object Uint8ClampedArray]',
@@ -1171,262 +1173,262 @@
       '[object Float64Array]'
     ]
 &nbsp;
-<span class="cstat-no" title="statement not covered">    var isDataView = <span class="fstat-no" title="function not covered">function(obj) {</span></span>
-<span class="cstat-no" title="statement not covered">      return obj &amp;&amp; DataView.prototype.isPrototypeOf(obj)</span>
+<span class="cstat-no" title="statement not covered" >    var isDataView = <span class="fstat-no" title="function not covered" >function(obj) {</span></span>
+<span class="cstat-no" title="statement not covered" >      return obj &amp;&amp; DataView.prototype.isPrototypeOf(obj)</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    var isArrayBufferView = ArrayBuffer.isView || <span class="fstat-no" title="function not covered">function(obj) {</span></span>
-<span class="cstat-no" title="statement not covered">      return obj &amp;&amp; viewClasses.indexOf(Object.prototype.toString.call(obj)) &gt; -1</span>
+<span class="cstat-no" title="statement not covered" >    var isArrayBufferView = ArrayBuffer.isView || <span class="fstat-no" title="function not covered" >function(obj) {</span></span>
+<span class="cstat-no" title="statement not covered" >      return obj &amp;&amp; viewClasses.indexOf(Object.prototype.toString.call(obj)) &gt; -1</span>
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function normalizeName(name) {</span>
-<span class="cstat-no" title="statement not covered">    if (typeof name !== 'string') {</span>
-<span class="cstat-no" title="statement not covered">      name = String(name)</span>
+<span class="fstat-no" title="function not covered" >  function normalizeName(name) {</span>
+<span class="cstat-no" title="statement not covered" >    if (typeof name !== 'string') {</span>
+<span class="cstat-no" title="statement not covered" >      name = String(name)</span>
     }
-<span class="cstat-no" title="statement not covered">    if (/[^a-z0-9\-#$%&amp;'*+.\^_`|~]/i.test(name)) {</span>
-<span class="cstat-no" title="statement not covered">      throw new TypeError('Invalid character in header field name')</span>
+<span class="cstat-no" title="statement not covered" >    if (/[^a-z0-9\-#$%&amp;'*+.\^_`|~]/i.test(name)) {</span>
+<span class="cstat-no" title="statement not covered" >      throw new TypeError('Invalid character in header field name')</span>
     }
-<span class="cstat-no" title="statement not covered">    return name.toLowerCase()</span>
+<span class="cstat-no" title="statement not covered" >    return name.toLowerCase()</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function normalizeValue(value) {</span>
-<span class="cstat-no" title="statement not covered">    if (typeof value !== 'string') {</span>
-<span class="cstat-no" title="statement not covered">      value = String(value)</span>
+<span class="fstat-no" title="function not covered" >  function normalizeValue(value) {</span>
+<span class="cstat-no" title="statement not covered" >    if (typeof value !== 'string') {</span>
+<span class="cstat-no" title="statement not covered" >      value = String(value)</span>
     }
-<span class="cstat-no" title="statement not covered">    return value</span>
+<span class="cstat-no" title="statement not covered" >    return value</span>
   }
 &nbsp;
   // Build a destructive iterator for the value list
-<span class="fstat-no" title="function not covered">  function iteratorFor(items) {</span>
-<span class="cstat-no" title="statement not covered">    var iterator = {</span>
-      next: <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">        var value = items.shift()</span>
-<span class="cstat-no" title="statement not covered">        return {done: value === undefined, value: value}</span>
+<span class="fstat-no" title="function not covered" >  function iteratorFor(items) {</span>
+<span class="cstat-no" title="statement not covered" >    var iterator = {</span>
+      next: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >        var value = items.shift()</span>
+<span class="cstat-no" title="statement not covered" >        return {done: value === undefined, value: value}</span>
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if (support.iterable) {</span>
-<span class="cstat-no" title="statement not covered">      iterator[Symbol.iterator] = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        return iterator</span>
+<span class="cstat-no" title="statement not covered" >    if (support.iterable) {</span>
+<span class="cstat-no" title="statement not covered" >      iterator[Symbol.iterator] = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        return iterator</span>
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    return iterator</span>
+<span class="cstat-no" title="statement not covered" >    return iterator</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function Headers(headers) {</span>
-<span class="cstat-no" title="statement not covered">    this.map = {}</span>
+<span class="fstat-no" title="function not covered" >  function Headers(headers) {</span>
+<span class="cstat-no" title="statement not covered" >    this.map = {}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if (headers instanceof Headers) {</span>
-<span class="cstat-no" title="statement not covered">      headers.forEach(<span class="fstat-no" title="function not covered">function(value, name) {</span></span>
-<span class="cstat-no" title="statement not covered">        this.append(name, value)</span>
+<span class="cstat-no" title="statement not covered" >    if (headers instanceof Headers) {</span>
+<span class="cstat-no" title="statement not covered" >      headers.forEach(<span class="fstat-no" title="function not covered" >function(value, name) {</span></span>
+<span class="cstat-no" title="statement not covered" >        this.append(name, value)</span>
       }, this)
-    } else <span class="cstat-no" title="statement not covered">if (Array.isArray(headers)) {</span>
-<span class="cstat-no" title="statement not covered">      headers.forEach(<span class="fstat-no" title="function not covered">function(header) {</span></span>
-<span class="cstat-no" title="statement not covered">        this.append(header[0], header[1])</span>
+    } else <span class="cstat-no" title="statement not covered" >if (Array.isArray(headers)) {</span>
+<span class="cstat-no" title="statement not covered" >      headers.forEach(<span class="fstat-no" title="function not covered" >function(header) {</span></span>
+<span class="cstat-no" title="statement not covered" >        this.append(header[0], header[1])</span>
       }, this)
-    } else <span class="cstat-no" title="statement not covered">if (headers) {</span>
-<span class="cstat-no" title="statement not covered">      Object.getOwnPropertyNames(headers).forEach(<span class="fstat-no" title="function not covered">function(name) {</span></span>
-<span class="cstat-no" title="statement not covered">        this.append(name, headers[name])</span>
+    } else <span class="cstat-no" title="statement not covered" >if (headers) {</span>
+<span class="cstat-no" title="statement not covered" >      Object.getOwnPropertyNames(headers).forEach(<span class="fstat-no" title="function not covered" >function(name) {</span></span>
+<span class="cstat-no" title="statement not covered" >        this.append(name, headers[name])</span>
       }, this)
     }
   }
 &nbsp;
-  Headers.prototype.append = <span class="fstat-no" title="function not covered">function(name, value) {</span>
-<span class="cstat-no" title="statement not covered">    name = normalizeName(name)</span>
-<span class="cstat-no" title="statement not covered">    value = normalizeValue(value)</span>
-<span class="cstat-no" title="statement not covered">    var oldValue = this.map[name]</span>
-<span class="cstat-no" title="statement not covered">    this.map[name] = oldValue ? oldValue+','+value : value</span>
+  Headers.prototype.append = <span class="fstat-no" title="function not covered" >function(name, value) {</span>
+<span class="cstat-no" title="statement not covered" >    name = normalizeName(name)</span>
+<span class="cstat-no" title="statement not covered" >    value = normalizeValue(value)</span>
+<span class="cstat-no" title="statement not covered" >    var oldValue = this.map[name]</span>
+<span class="cstat-no" title="statement not covered" >    this.map[name] = oldValue ? oldValue+','+value : value</span>
   }
 &nbsp;
-  Headers.prototype['delete'] = <span class="fstat-no" title="function not covered">function(name) {</span>
-<span class="cstat-no" title="statement not covered">    delete this.map[normalizeName(name)]</span>
+  Headers.prototype['delete'] = <span class="fstat-no" title="function not covered" >function(name) {</span>
+<span class="cstat-no" title="statement not covered" >    delete this.map[normalizeName(name)]</span>
   }
 &nbsp;
-  Headers.prototype.get = <span class="fstat-no" title="function not covered">function(name) {</span>
-<span class="cstat-no" title="statement not covered">    name = normalizeName(name)</span>
-<span class="cstat-no" title="statement not covered">    return this.has(name) ? this.map[name] : null</span>
+  Headers.prototype.get = <span class="fstat-no" title="function not covered" >function(name) {</span>
+<span class="cstat-no" title="statement not covered" >    name = normalizeName(name)</span>
+<span class="cstat-no" title="statement not covered" >    return this.has(name) ? this.map[name] : null</span>
   }
 &nbsp;
-  Headers.prototype.has = <span class="fstat-no" title="function not covered">function(name) {</span>
-<span class="cstat-no" title="statement not covered">    return this.map.hasOwnProperty(normalizeName(name))</span>
+  Headers.prototype.has = <span class="fstat-no" title="function not covered" >function(name) {</span>
+<span class="cstat-no" title="statement not covered" >    return this.map.hasOwnProperty(normalizeName(name))</span>
   }
 &nbsp;
-  Headers.prototype.set = <span class="fstat-no" title="function not covered">function(name, value) {</span>
-<span class="cstat-no" title="statement not covered">    this.map[normalizeName(name)] = normalizeValue(value)</span>
+  Headers.prototype.set = <span class="fstat-no" title="function not covered" >function(name, value) {</span>
+<span class="cstat-no" title="statement not covered" >    this.map[normalizeName(name)] = normalizeValue(value)</span>
   }
 &nbsp;
-  Headers.prototype.forEach = <span class="fstat-no" title="function not covered">function(callback, thisArg) {</span>
-<span class="cstat-no" title="statement not covered">    for (var name in this.map) {</span>
-<span class="cstat-no" title="statement not covered">      if (this.map.hasOwnProperty(name)) {</span>
-<span class="cstat-no" title="statement not covered">        callback.call(thisArg, this.map[name], name, this)</span>
+  Headers.prototype.forEach = <span class="fstat-no" title="function not covered" >function(callback, thisArg) {</span>
+<span class="cstat-no" title="statement not covered" >    for (var name in this.map) {</span>
+<span class="cstat-no" title="statement not covered" >      if (this.map.hasOwnProperty(name)) {</span>
+<span class="cstat-no" title="statement not covered" >        callback.call(thisArg, this.map[name], name, this)</span>
       }
     }
   }
 &nbsp;
-  Headers.prototype.keys = <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    var items = []</span>
-<span class="cstat-no" title="statement not covered">    this.forEach(<span class="fstat-no" title="function not covered">function(value, name) {</span> <span class="cstat-no" title="statement not covered">items.push(name) }</span>)</span>
-<span class="cstat-no" title="statement not covered">    return iteratorFor(items)</span>
+  Headers.prototype.keys = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    var items = []</span>
+<span class="cstat-no" title="statement not covered" >    this.forEach(<span class="fstat-no" title="function not covered" >function(value, name) {</span> <span class="cstat-no" title="statement not covered" >items.push(name) }</span>)</span>
+<span class="cstat-no" title="statement not covered" >    return iteratorFor(items)</span>
   }
 &nbsp;
-  Headers.prototype.values = <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    var items = []</span>
-<span class="cstat-no" title="statement not covered">    this.forEach(<span class="fstat-no" title="function not covered">function(value) {</span> <span class="cstat-no" title="statement not covered">items.push(value) }</span>)</span>
-<span class="cstat-no" title="statement not covered">    return iteratorFor(items)</span>
+  Headers.prototype.values = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    var items = []</span>
+<span class="cstat-no" title="statement not covered" >    this.forEach(<span class="fstat-no" title="function not covered" >function(value) {</span> <span class="cstat-no" title="statement not covered" >items.push(value) }</span>)</span>
+<span class="cstat-no" title="statement not covered" >    return iteratorFor(items)</span>
   }
 &nbsp;
-  Headers.prototype.entries = <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    var items = []</span>
-<span class="cstat-no" title="statement not covered">    this.forEach(<span class="fstat-no" title="function not covered">function(value, name) {</span> <span class="cstat-no" title="statement not covered">items.push([name, value]) }</span>)</span>
-<span class="cstat-no" title="statement not covered">    return iteratorFor(items)</span>
+  Headers.prototype.entries = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    var items = []</span>
+<span class="cstat-no" title="statement not covered" >    this.forEach(<span class="fstat-no" title="function not covered" >function(value, name) {</span> <span class="cstat-no" title="statement not covered" >items.push([name, value]) }</span>)</span>
+<span class="cstat-no" title="statement not covered" >    return iteratorFor(items)</span>
   }
 &nbsp;
-  <span class="missing-if-branch" title="if path not taken">I</span>if (support.iterable) {
-<span class="cstat-no" title="statement not covered">    Headers.prototype[Symbol.iterator] = Headers.prototype.entries</span>
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (support.iterable) {
+<span class="cstat-no" title="statement not covered" >    Headers.prototype[Symbol.iterator] = Headers.prototype.entries</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function consumed(body) {</span>
-<span class="cstat-no" title="statement not covered">    if (body.bodyUsed) {</span>
-<span class="cstat-no" title="statement not covered">      return Promise.reject(new TypeError('Already read'))</span>
+<span class="fstat-no" title="function not covered" >  function consumed(body) {</span>
+<span class="cstat-no" title="statement not covered" >    if (body.bodyUsed) {</span>
+<span class="cstat-no" title="statement not covered" >      return Promise.reject(new TypeError('Already read'))</span>
     }
-<span class="cstat-no" title="statement not covered">    body.bodyUsed = true</span>
+<span class="cstat-no" title="statement not covered" >    body.bodyUsed = true</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function fileReaderReady(reader) {</span>
-<span class="cstat-no" title="statement not covered">    return new Promise(<span class="fstat-no" title="function not covered">function(resolve, reject) {</span></span>
-<span class="cstat-no" title="statement not covered">      reader.onload = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        resolve(reader.result)</span>
+<span class="fstat-no" title="function not covered" >  function fileReaderReady(reader) {</span>
+<span class="cstat-no" title="statement not covered" >    return new Promise(<span class="fstat-no" title="function not covered" >function(resolve, reject) {</span></span>
+<span class="cstat-no" title="statement not covered" >      reader.onload = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        resolve(reader.result)</span>
       }
-<span class="cstat-no" title="statement not covered">      reader.onerror = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        reject(reader.error)</span>
+<span class="cstat-no" title="statement not covered" >      reader.onerror = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        reject(reader.error)</span>
       }
     })
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function readBlobAsArrayBuffer(blob) {</span>
-<span class="cstat-no" title="statement not covered">    var reader = new FileReader()</span>
-<span class="cstat-no" title="statement not covered">    var promise = fileReaderReady(reader)</span>
-<span class="cstat-no" title="statement not covered">    reader.readAsArrayBuffer(blob)</span>
-<span class="cstat-no" title="statement not covered">    return promise</span>
+<span class="fstat-no" title="function not covered" >  function readBlobAsArrayBuffer(blob) {</span>
+<span class="cstat-no" title="statement not covered" >    var reader = new FileReader()</span>
+<span class="cstat-no" title="statement not covered" >    var promise = fileReaderReady(reader)</span>
+<span class="cstat-no" title="statement not covered" >    reader.readAsArrayBuffer(blob)</span>
+<span class="cstat-no" title="statement not covered" >    return promise</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function readBlobAsText(blob) {</span>
-<span class="cstat-no" title="statement not covered">    var reader = new FileReader()</span>
-<span class="cstat-no" title="statement not covered">    var promise = fileReaderReady(reader)</span>
-<span class="cstat-no" title="statement not covered">    reader.readAsText(blob)</span>
-<span class="cstat-no" title="statement not covered">    return promise</span>
+<span class="fstat-no" title="function not covered" >  function readBlobAsText(blob) {</span>
+<span class="cstat-no" title="statement not covered" >    var reader = new FileReader()</span>
+<span class="cstat-no" title="statement not covered" >    var promise = fileReaderReady(reader)</span>
+<span class="cstat-no" title="statement not covered" >    reader.readAsText(blob)</span>
+<span class="cstat-no" title="statement not covered" >    return promise</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function readArrayBufferAsText(buf) {</span>
-<span class="cstat-no" title="statement not covered">    var view = new Uint8Array(buf)</span>
-<span class="cstat-no" title="statement not covered">    var chars = new Array(view.length)</span>
+<span class="fstat-no" title="function not covered" >  function readArrayBufferAsText(buf) {</span>
+<span class="cstat-no" title="statement not covered" >    var view = new Uint8Array(buf)</span>
+<span class="cstat-no" title="statement not covered" >    var chars = new Array(view.length)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    for (var i = 0; i &lt; view.length; i++) {</span>
-<span class="cstat-no" title="statement not covered">      chars[i] = String.fromCharCode(view[i])</span>
+<span class="cstat-no" title="statement not covered" >    for (var i = 0; i &lt; view.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      chars[i] = String.fromCharCode(view[i])</span>
     }
-<span class="cstat-no" title="statement not covered">    return chars.join('')</span>
+<span class="cstat-no" title="statement not covered" >    return chars.join('')</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function bufferClone(buf) {</span>
-<span class="cstat-no" title="statement not covered">    if (buf.slice) {</span>
-<span class="cstat-no" title="statement not covered">      return buf.slice(0)</span>
+<span class="fstat-no" title="function not covered" >  function bufferClone(buf) {</span>
+<span class="cstat-no" title="statement not covered" >    if (buf.slice) {</span>
+<span class="cstat-no" title="statement not covered" >      return buf.slice(0)</span>
     } else {
-<span class="cstat-no" title="statement not covered">      var view = new Uint8Array(buf.byteLength)</span>
-<span class="cstat-no" title="statement not covered">      view.set(new Uint8Array(buf))</span>
-<span class="cstat-no" title="statement not covered">      return view.buffer</span>
+<span class="cstat-no" title="statement not covered" >      var view = new Uint8Array(buf.byteLength)</span>
+<span class="cstat-no" title="statement not covered" >      view.set(new Uint8Array(buf))</span>
+<span class="cstat-no" title="statement not covered" >      return view.buffer</span>
     }
   }
 &nbsp;
   function Body() {
     this.bodyUsed = false
 &nbsp;
-    this._initBody = <span class="fstat-no" title="function not covered">function(body) {</span>
-<span class="cstat-no" title="statement not covered">      this._bodyInit = body</span>
-<span class="cstat-no" title="statement not covered">      if (!body) {</span>
-<span class="cstat-no" title="statement not covered">        this._bodyText = ''</span>
-      } else <span class="cstat-no" title="statement not covered">if (typeof body === 'string') {</span>
-<span class="cstat-no" title="statement not covered">        this._bodyText = body</span>
-      } else <span class="cstat-no" title="statement not covered">if (support.blob &amp;&amp; Blob.prototype.isPrototypeOf(body)) {</span>
-<span class="cstat-no" title="statement not covered">        this._bodyBlob = body</span>
-      } else <span class="cstat-no" title="statement not covered">if (support.formData &amp;&amp; FormData.prototype.isPrototypeOf(body)) {</span>
-<span class="cstat-no" title="statement not covered">        this._bodyFormData = body</span>
-      } else <span class="cstat-no" title="statement not covered">if (support.searchParams &amp;&amp; URLSearchParams.prototype.isPrototypeOf(body)) {</span>
-<span class="cstat-no" title="statement not covered">        this._bodyText = body.toString()</span>
-      } else <span class="cstat-no" title="statement not covered">if (support.arrayBuffer &amp;&amp; support.blob &amp;&amp; isDataView(body)) {</span>
-<span class="cstat-no" title="statement not covered">        this._bodyArrayBuffer = bufferClone(body.buffer)</span>
+    this._initBody = <span class="fstat-no" title="function not covered" >function(body) {</span>
+<span class="cstat-no" title="statement not covered" >      this._bodyInit = body</span>
+<span class="cstat-no" title="statement not covered" >      if (!body) {</span>
+<span class="cstat-no" title="statement not covered" >        this._bodyText = ''</span>
+      } else <span class="cstat-no" title="statement not covered" >if (typeof body === 'string') {</span>
+<span class="cstat-no" title="statement not covered" >        this._bodyText = body</span>
+      } else <span class="cstat-no" title="statement not covered" >if (support.blob &amp;&amp; Blob.prototype.isPrototypeOf(body)) {</span>
+<span class="cstat-no" title="statement not covered" >        this._bodyBlob = body</span>
+      } else <span class="cstat-no" title="statement not covered" >if (support.formData &amp;&amp; FormData.prototype.isPrototypeOf(body)) {</span>
+<span class="cstat-no" title="statement not covered" >        this._bodyFormData = body</span>
+      } else <span class="cstat-no" title="statement not covered" >if (support.searchParams &amp;&amp; URLSearchParams.prototype.isPrototypeOf(body)) {</span>
+<span class="cstat-no" title="statement not covered" >        this._bodyText = body.toString()</span>
+      } else <span class="cstat-no" title="statement not covered" >if (support.arrayBuffer &amp;&amp; support.blob &amp;&amp; isDataView(body)) {</span>
+<span class="cstat-no" title="statement not covered" >        this._bodyArrayBuffer = bufferClone(body.buffer)</span>
         // IE 10-11 can't handle a DataView body.
-<span class="cstat-no" title="statement not covered">        this._bodyInit = new Blob([this._bodyArrayBuffer])</span>
-      } else <span class="cstat-no" title="statement not covered">if (support.arrayBuffer &amp;&amp; (ArrayBuffer.prototype.isPrototypeOf(body) || isArrayBufferView(body))) {</span>
-<span class="cstat-no" title="statement not covered">        this._bodyArrayBuffer = bufferClone(body)</span>
+<span class="cstat-no" title="statement not covered" >        this._bodyInit = new Blob([this._bodyArrayBuffer])</span>
+      } else <span class="cstat-no" title="statement not covered" >if (support.arrayBuffer &amp;&amp; (ArrayBuffer.prototype.isPrototypeOf(body) || isArrayBufferView(body))) {</span>
+<span class="cstat-no" title="statement not covered" >        this._bodyArrayBuffer = bufferClone(body)</span>
       } else {
-<span class="cstat-no" title="statement not covered">        throw new Error('unsupported BodyInit type')</span>
+<span class="cstat-no" title="statement not covered" >        throw new Error('unsupported BodyInit type')</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      if (!this.headers.get('content-type')) {</span>
-<span class="cstat-no" title="statement not covered">        if (typeof body === 'string') {</span>
-<span class="cstat-no" title="statement not covered">          this.headers.set('content-type', 'text/plain;charset=UTF-8')</span>
-        } else <span class="cstat-no" title="statement not covered">if (this._bodyBlob &amp;&amp; this._bodyBlob.type) {</span>
-<span class="cstat-no" title="statement not covered">          this.headers.set('content-type', this._bodyBlob.type)</span>
-        } else <span class="cstat-no" title="statement not covered">if (support.searchParams &amp;&amp; URLSearchParams.prototype.isPrototypeOf(body)) {</span>
-<span class="cstat-no" title="statement not covered">          this.headers.set('content-type', 'application/x-www-form-urlencoded;charset=UTF-8')</span>
+<span class="cstat-no" title="statement not covered" >      if (!this.headers.get('content-type')) {</span>
+<span class="cstat-no" title="statement not covered" >        if (typeof body === 'string') {</span>
+<span class="cstat-no" title="statement not covered" >          this.headers.set('content-type', 'text/plain;charset=UTF-8')</span>
+        } else <span class="cstat-no" title="statement not covered" >if (this._bodyBlob &amp;&amp; this._bodyBlob.type) {</span>
+<span class="cstat-no" title="statement not covered" >          this.headers.set('content-type', this._bodyBlob.type)</span>
+        } else <span class="cstat-no" title="statement not covered" >if (support.searchParams &amp;&amp; URLSearchParams.prototype.isPrototypeOf(body)) {</span>
+<span class="cstat-no" title="statement not covered" >          this.headers.set('content-type', 'application/x-www-form-urlencoded;charset=UTF-8')</span>
         }
       }
     }
 &nbsp;
-    <span class="missing-if-branch" title="if path not taken">I</span>if (support.blob) {
-<span class="cstat-no" title="statement not covered">      this.blob = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        var rejected = consumed(this)</span>
-<span class="cstat-no" title="statement not covered">        if (rejected) {</span>
-<span class="cstat-no" title="statement not covered">          return rejected</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (support.blob) {
+<span class="cstat-no" title="statement not covered" >      this.blob = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        var rejected = consumed(this)</span>
+<span class="cstat-no" title="statement not covered" >        if (rejected) {</span>
+<span class="cstat-no" title="statement not covered" >          return rejected</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered">        if (this._bodyBlob) {</span>
-<span class="cstat-no" title="statement not covered">          return Promise.resolve(this._bodyBlob)</span>
-        } else <span class="cstat-no" title="statement not covered">if (this._bodyArrayBuffer) {</span>
-<span class="cstat-no" title="statement not covered">          return Promise.resolve(new Blob([this._bodyArrayBuffer]))</span>
-        } else <span class="cstat-no" title="statement not covered">if (this._bodyFormData) {</span>
-<span class="cstat-no" title="statement not covered">          throw new Error('could not read FormData body as blob')</span>
+<span class="cstat-no" title="statement not covered" >        if (this._bodyBlob) {</span>
+<span class="cstat-no" title="statement not covered" >          return Promise.resolve(this._bodyBlob)</span>
+        } else <span class="cstat-no" title="statement not covered" >if (this._bodyArrayBuffer) {</span>
+<span class="cstat-no" title="statement not covered" >          return Promise.resolve(new Blob([this._bodyArrayBuffer]))</span>
+        } else <span class="cstat-no" title="statement not covered" >if (this._bodyFormData) {</span>
+<span class="cstat-no" title="statement not covered" >          throw new Error('could not read FormData body as blob')</span>
         } else {
-<span class="cstat-no" title="statement not covered">          return Promise.resolve(new Blob([this._bodyText]))</span>
+<span class="cstat-no" title="statement not covered" >          return Promise.resolve(new Blob([this._bodyText]))</span>
         }
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      this.arrayBuffer = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        if (this._bodyArrayBuffer) {</span>
-<span class="cstat-no" title="statement not covered">          return consumed(this) || Promise.resolve(this._bodyArrayBuffer)</span>
+<span class="cstat-no" title="statement not covered" >      this.arrayBuffer = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        if (this._bodyArrayBuffer) {</span>
+<span class="cstat-no" title="statement not covered" >          return consumed(this) || Promise.resolve(this._bodyArrayBuffer)</span>
         } else {
-<span class="cstat-no" title="statement not covered">          return this.blob().then(readBlobAsArrayBuffer)</span>
+<span class="cstat-no" title="statement not covered" >          return this.blob().then(readBlobAsArrayBuffer)</span>
         }
       }
     }
 &nbsp;
-    this.text = <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">      var rejected = consumed(this)</span>
-<span class="cstat-no" title="statement not covered">      if (rejected) {</span>
-<span class="cstat-no" title="statement not covered">        return rejected</span>
+    this.text = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >      var rejected = consumed(this)</span>
+<span class="cstat-no" title="statement not covered" >      if (rejected) {</span>
+<span class="cstat-no" title="statement not covered" >        return rejected</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      if (this._bodyBlob) {</span>
-<span class="cstat-no" title="statement not covered">        return readBlobAsText(this._bodyBlob)</span>
-      } else <span class="cstat-no" title="statement not covered">if (this._bodyArrayBuffer) {</span>
-<span class="cstat-no" title="statement not covered">        return Promise.resolve(readArrayBufferAsText(this._bodyArrayBuffer))</span>
-      } else <span class="cstat-no" title="statement not covered">if (this._bodyFormData) {</span>
-<span class="cstat-no" title="statement not covered">        throw new Error('could not read FormData body as text')</span>
+<span class="cstat-no" title="statement not covered" >      if (this._bodyBlob) {</span>
+<span class="cstat-no" title="statement not covered" >        return readBlobAsText(this._bodyBlob)</span>
+      } else <span class="cstat-no" title="statement not covered" >if (this._bodyArrayBuffer) {</span>
+<span class="cstat-no" title="statement not covered" >        return Promise.resolve(readArrayBufferAsText(this._bodyArrayBuffer))</span>
+      } else <span class="cstat-no" title="statement not covered" >if (this._bodyFormData) {</span>
+<span class="cstat-no" title="statement not covered" >        throw new Error('could not read FormData body as text')</span>
       } else {
-<span class="cstat-no" title="statement not covered">        return Promise.resolve(this._bodyText)</span>
+<span class="cstat-no" title="statement not covered" >        return Promise.resolve(this._bodyText)</span>
       }
     }
 &nbsp;
-    <span class="missing-if-branch" title="if path not taken">I</span>if (support.formData) {
-<span class="cstat-no" title="statement not covered">      this.formData = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        return this.text().then(decode)</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (support.formData) {
+<span class="cstat-no" title="statement not covered" >      this.formData = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        return this.text().then(decode)</span>
       }
     }
 &nbsp;
-    this.json = <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">      return this.text().then(JSON.parse)</span>
+    this.json = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >      return this.text().then(JSON.parse)</span>
     }
 &nbsp;
     return this
@@ -1435,98 +1437,98 @@
   // HTTP methods whose capitalization should be normalized
   var methods = ['DELETE', 'GET', 'HEAD', 'OPTIONS', 'POST', 'PUT']
 &nbsp;
-<span class="fstat-no" title="function not covered">  function normalizeMethod(method) {</span>
-<span class="cstat-no" title="statement not covered">    var upcased = method.toUpperCase()</span>
-<span class="cstat-no" title="statement not covered">    return (methods.indexOf(upcased) &gt; -1) ? upcased : method</span>
+<span class="fstat-no" title="function not covered" >  function normalizeMethod(method) {</span>
+<span class="cstat-no" title="statement not covered" >    var upcased = method.toUpperCase()</span>
+<span class="cstat-no" title="statement not covered" >    return (methods.indexOf(upcased) &gt; -1) ? upcased : method</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function Request(input, options) {</span>
-<span class="cstat-no" title="statement not covered">    options = options || {}</span>
-<span class="cstat-no" title="statement not covered">    var body = options.body</span>
+<span class="fstat-no" title="function not covered" >  function Request(input, options) {</span>
+<span class="cstat-no" title="statement not covered" >    options = options || {}</span>
+<span class="cstat-no" title="statement not covered" >    var body = options.body</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if (input instanceof Request) {</span>
-<span class="cstat-no" title="statement not covered">      if (input.bodyUsed) {</span>
-<span class="cstat-no" title="statement not covered">        throw new TypeError('Already read')</span>
+<span class="cstat-no" title="statement not covered" >    if (input instanceof Request) {</span>
+<span class="cstat-no" title="statement not covered" >      if (input.bodyUsed) {</span>
+<span class="cstat-no" title="statement not covered" >        throw new TypeError('Already read')</span>
       }
-<span class="cstat-no" title="statement not covered">      this.url = input.url</span>
-<span class="cstat-no" title="statement not covered">      this.credentials = input.credentials</span>
-<span class="cstat-no" title="statement not covered">      if (!options.headers) {</span>
-<span class="cstat-no" title="statement not covered">        this.headers = new Headers(input.headers)</span>
+<span class="cstat-no" title="statement not covered" >      this.url = input.url</span>
+<span class="cstat-no" title="statement not covered" >      this.credentials = input.credentials</span>
+<span class="cstat-no" title="statement not covered" >      if (!options.headers) {</span>
+<span class="cstat-no" title="statement not covered" >        this.headers = new Headers(input.headers)</span>
       }
-<span class="cstat-no" title="statement not covered">      this.method = input.method</span>
-<span class="cstat-no" title="statement not covered">      this.mode = input.mode</span>
-<span class="cstat-no" title="statement not covered">      if (!body &amp;&amp; input._bodyInit != null) {</span>
-<span class="cstat-no" title="statement not covered">        body = input._bodyInit</span>
-<span class="cstat-no" title="statement not covered">        input.bodyUsed = true</span>
+<span class="cstat-no" title="statement not covered" >      this.method = input.method</span>
+<span class="cstat-no" title="statement not covered" >      this.mode = input.mode</span>
+<span class="cstat-no" title="statement not covered" >      if (!body &amp;&amp; input._bodyInit != null) {</span>
+<span class="cstat-no" title="statement not covered" >        body = input._bodyInit</span>
+<span class="cstat-no" title="statement not covered" >        input.bodyUsed = true</span>
       }
     } else {
-<span class="cstat-no" title="statement not covered">      this.url = String(input)</span>
+<span class="cstat-no" title="statement not covered" >      this.url = String(input)</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    this.credentials = options.credentials || this.credentials || 'omit'</span>
-<span class="cstat-no" title="statement not covered">    if (options.headers || !this.headers) {</span>
-<span class="cstat-no" title="statement not covered">      this.headers = new Headers(options.headers)</span>
+<span class="cstat-no" title="statement not covered" >    this.credentials = options.credentials || this.credentials || 'omit'</span>
+<span class="cstat-no" title="statement not covered" >    if (options.headers || !this.headers) {</span>
+<span class="cstat-no" title="statement not covered" >      this.headers = new Headers(options.headers)</span>
     }
-<span class="cstat-no" title="statement not covered">    this.method = normalizeMethod(options.method || this.method || 'GET')</span>
-<span class="cstat-no" title="statement not covered">    this.mode = options.mode || this.mode || null</span>
-<span class="cstat-no" title="statement not covered">    this.referrer = null</span>
+<span class="cstat-no" title="statement not covered" >    this.method = normalizeMethod(options.method || this.method || 'GET')</span>
+<span class="cstat-no" title="statement not covered" >    this.mode = options.mode || this.mode || null</span>
+<span class="cstat-no" title="statement not covered" >    this.referrer = null</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if ((this.method === 'GET' || this.method === 'HEAD') &amp;&amp; body) {</span>
-<span class="cstat-no" title="statement not covered">      throw new TypeError('Body not allowed for GET or HEAD requests')</span>
+<span class="cstat-no" title="statement not covered" >    if ((this.method === 'GET' || this.method === 'HEAD') &amp;&amp; body) {</span>
+<span class="cstat-no" title="statement not covered" >      throw new TypeError('Body not allowed for GET or HEAD requests')</span>
     }
-<span class="cstat-no" title="statement not covered">    this._initBody(body)</span>
+<span class="cstat-no" title="statement not covered" >    this._initBody(body)</span>
   }
 &nbsp;
-  Request.prototype.clone = <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    return new Request(this, { body: this._bodyInit })</span>
+  Request.prototype.clone = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    return new Request(this, { body: this._bodyInit })</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function decode(body) {</span>
-<span class="cstat-no" title="statement not covered">    var form = new FormData()</span>
-<span class="cstat-no" title="statement not covered">    body.trim().split('&amp;').forEach(<span class="fstat-no" title="function not covered">function(bytes) {</span></span>
-<span class="cstat-no" title="statement not covered">      if (bytes) {</span>
-<span class="cstat-no" title="statement not covered">        var split = bytes.split('=')</span>
-<span class="cstat-no" title="statement not covered">        var name = split.shift().replace(/\+/g, ' ')</span>
-<span class="cstat-no" title="statement not covered">        var value = split.join('=').replace(/\+/g, ' ')</span>
-<span class="cstat-no" title="statement not covered">        form.append(decodeURIComponent(name), decodeURIComponent(value))</span>
+<span class="fstat-no" title="function not covered" >  function decode(body) {</span>
+<span class="cstat-no" title="statement not covered" >    var form = new FormData()</span>
+<span class="cstat-no" title="statement not covered" >    body.trim().split('&amp;').forEach(<span class="fstat-no" title="function not covered" >function(bytes) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (bytes) {</span>
+<span class="cstat-no" title="statement not covered" >        var split = bytes.split('=')</span>
+<span class="cstat-no" title="statement not covered" >        var name = split.shift().replace(/\+/g, ' ')</span>
+<span class="cstat-no" title="statement not covered" >        var value = split.join('=').replace(/\+/g, ' ')</span>
+<span class="cstat-no" title="statement not covered" >        form.append(decodeURIComponent(name), decodeURIComponent(value))</span>
       }
     })
-<span class="cstat-no" title="statement not covered">    return form</span>
+<span class="cstat-no" title="statement not covered" >    return form</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function parseHeaders(rawHeaders) {</span>
-<span class="cstat-no" title="statement not covered">    var headers = new Headers()</span>
-<span class="cstat-no" title="statement not covered">    rawHeaders.split(/\r?\n/).forEach(<span class="fstat-no" title="function not covered">function(line) {</span></span>
-<span class="cstat-no" title="statement not covered">      var parts = line.split(':')</span>
-<span class="cstat-no" title="statement not covered">      var key = parts.shift().trim()</span>
-<span class="cstat-no" title="statement not covered">      if (key) {</span>
-<span class="cstat-no" title="statement not covered">        var value = parts.join(':').trim()</span>
-<span class="cstat-no" title="statement not covered">        headers.append(key, value)</span>
+<span class="fstat-no" title="function not covered" >  function parseHeaders(rawHeaders) {</span>
+<span class="cstat-no" title="statement not covered" >    var headers = new Headers()</span>
+<span class="cstat-no" title="statement not covered" >    rawHeaders.split(/\r?\n/).forEach(<span class="fstat-no" title="function not covered" >function(line) {</span></span>
+<span class="cstat-no" title="statement not covered" >      var parts = line.split(':')</span>
+<span class="cstat-no" title="statement not covered" >      var key = parts.shift().trim()</span>
+<span class="cstat-no" title="statement not covered" >      if (key) {</span>
+<span class="cstat-no" title="statement not covered" >        var value = parts.join(':').trim()</span>
+<span class="cstat-no" title="statement not covered" >        headers.append(key, value)</span>
       }
     })
-<span class="cstat-no" title="statement not covered">    return headers</span>
+<span class="cstat-no" title="statement not covered" >    return headers</span>
   }
 &nbsp;
   Body.call(Request.prototype)
 &nbsp;
-<span class="fstat-no" title="function not covered">  function Response(bodyInit, options) {</span>
-<span class="cstat-no" title="statement not covered">    if (!options) {</span>
-<span class="cstat-no" title="statement not covered">      options = {}</span>
+<span class="fstat-no" title="function not covered" >  function Response(bodyInit, options) {</span>
+<span class="cstat-no" title="statement not covered" >    if (!options) {</span>
+<span class="cstat-no" title="statement not covered" >      options = {}</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    this.type = 'default'</span>
-<span class="cstat-no" title="statement not covered">    this.status = 'status' in options ? options.status : 200</span>
-<span class="cstat-no" title="statement not covered">    this.ok = this.status &gt;= 200 &amp;&amp; this.status &lt; 300</span>
-<span class="cstat-no" title="statement not covered">    this.statusText = 'statusText' in options ? options.statusText : 'OK'</span>
-<span class="cstat-no" title="statement not covered">    this.headers = new Headers(options.headers)</span>
-<span class="cstat-no" title="statement not covered">    this.url = options.url || ''</span>
-<span class="cstat-no" title="statement not covered">    this._initBody(bodyInit)</span>
+<span class="cstat-no" title="statement not covered" >    this.type = 'default'</span>
+<span class="cstat-no" title="statement not covered" >    this.status = 'status' in options ? options.status : 200</span>
+<span class="cstat-no" title="statement not covered" >    this.ok = this.status &gt;= 200 &amp;&amp; this.status &lt; 300</span>
+<span class="cstat-no" title="statement not covered" >    this.statusText = 'statusText' in options ? options.statusText : 'OK'</span>
+<span class="cstat-no" title="statement not covered" >    this.headers = new Headers(options.headers)</span>
+<span class="cstat-no" title="statement not covered" >    this.url = options.url || ''</span>
+<span class="cstat-no" title="statement not covered" >    this._initBody(bodyInit)</span>
   }
 &nbsp;
   Body.call(Response.prototype)
 &nbsp;
-  Response.prototype.clone = <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    return new Response(this._bodyInit, {</span>
+  Response.prototype.clone = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    return new Response(this._bodyInit, {</span>
       status: this.status,
       statusText: this.statusText,
       headers: new Headers(this.headers),
@@ -1534,76 +1536,75 @@
     })
   }
 &nbsp;
-  Response.error = <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    var response = new Response(null, {status: 0, statusText: ''})</span>
-<span class="cstat-no" title="statement not covered">    response.type = 'error'</span>
-<span class="cstat-no" title="statement not covered">    return response</span>
+  Response.error = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    var response = new Response(null, {status: 0, statusText: ''})</span>
+<span class="cstat-no" title="statement not covered" >    response.type = 'error'</span>
+<span class="cstat-no" title="statement not covered" >    return response</span>
   }
 &nbsp;
   var redirectStatuses = [301, 302, 303, 307, 308]
 &nbsp;
-  Response.redirect = <span class="fstat-no" title="function not covered">function(url, status) {</span>
-<span class="cstat-no" title="statement not covered">    if (redirectStatuses.indexOf(status) === -1) {</span>
-<span class="cstat-no" title="statement not covered">      throw new RangeError('Invalid status code')</span>
+  Response.redirect = <span class="fstat-no" title="function not covered" >function(url, status) {</span>
+<span class="cstat-no" title="statement not covered" >    if (redirectStatuses.indexOf(status) === -1) {</span>
+<span class="cstat-no" title="statement not covered" >      throw new RangeError('Invalid status code')</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    return new Response(null, {status: status, headers: {location: url}})</span>
+<span class="cstat-no" title="statement not covered" >    return new Response(null, {status: status, headers: {location: url}})</span>
   }
 &nbsp;
   self.Headers = Headers
   self.Request = Request
   self.Response = Response
 &nbsp;
-  self.fetch = <span class="fstat-no" title="function not covered">function(input, init) {</span>
-<span class="cstat-no" title="statement not covered">    return new Promise(<span class="fstat-no" title="function not covered">function(resolve, reject) {</span></span>
-<span class="cstat-no" title="statement not covered">      var request = new Request(input, init)</span>
-<span class="cstat-no" title="statement not covered">      var xhr = new XMLHttpRequest()</span>
+  self.fetch = <span class="fstat-no" title="function not covered" >function(input, init) {</span>
+<span class="cstat-no" title="statement not covered" >    return new Promise(<span class="fstat-no" title="function not covered" >function(resolve, reject) {</span></span>
+<span class="cstat-no" title="statement not covered" >      var request = new Request(input, init)</span>
+<span class="cstat-no" title="statement not covered" >      var xhr = new XMLHttpRequest()</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">      xhr.onload = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        var options = {</span>
+<span class="cstat-no" title="statement not covered" >      xhr.onload = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        var options = {</span>
           status: xhr.status,
           statusText: xhr.statusText,
           headers: parseHeaders(xhr.getAllResponseHeaders() || '')
         }
-<span class="cstat-no" title="statement not covered">        options.url = 'responseURL' in xhr ? xhr.responseURL : options.headers.get('X-Request-URL')</span>
-<span class="cstat-no" title="statement not covered">        var body = 'response' in xhr ? xhr.response : xhr.responseText</span>
-<span class="cstat-no" title="statement not covered">        resolve(new Response(body, options))</span>
+<span class="cstat-no" title="statement not covered" >        options.url = 'responseURL' in xhr ? xhr.responseURL : options.headers.get('X-Request-URL')</span>
+<span class="cstat-no" title="statement not covered" >        var body = 'response' in xhr ? xhr.response : xhr.responseText</span>
+<span class="cstat-no" title="statement not covered" >        resolve(new Response(body, options))</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      xhr.onerror = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        reject(new TypeError('Network request failed'))</span>
+<span class="cstat-no" title="statement not covered" >      xhr.onerror = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        reject(new TypeError('Network request failed'))</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      xhr.ontimeout = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        reject(new TypeError('Network request failed'))</span>
+<span class="cstat-no" title="statement not covered" >      xhr.ontimeout = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        reject(new TypeError('Network request failed'))</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      xhr.open(request.method, request.url, true)</span>
+<span class="cstat-no" title="statement not covered" >      xhr.open(request.method, request.url, true)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">      if (request.credentials === 'include') {</span>
-<span class="cstat-no" title="statement not covered">        xhr.withCredentials = true</span>
+<span class="cstat-no" title="statement not covered" >      if (request.credentials === 'include') {</span>
+<span class="cstat-no" title="statement not covered" >        xhr.withCredentials = true</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      if ('responseType' in xhr &amp;&amp; support.blob) {</span>
-<span class="cstat-no" title="statement not covered">        xhr.responseType = 'blob'</span>
+<span class="cstat-no" title="statement not covered" >      if ('responseType' in xhr &amp;&amp; support.blob) {</span>
+<span class="cstat-no" title="statement not covered" >        xhr.responseType = 'blob'</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      request.headers.forEach(<span class="fstat-no" title="function not covered">function(value, name) {</span></span>
-<span class="cstat-no" title="statement not covered">        xhr.setRequestHeader(name, value)</span>
+<span class="cstat-no" title="statement not covered" >      request.headers.forEach(<span class="fstat-no" title="function not covered" >function(value, name) {</span></span>
+<span class="cstat-no" title="statement not covered" >        xhr.setRequestHeader(name, value)</span>
       })
 &nbsp;
-<span class="cstat-no" title="statement not covered">      xhr.send(typeof request._bodyInit === 'undefined' ? null : request._bodyInit)</span>
+<span class="cstat-no" title="statement not covered" >      xhr.send(typeof request._bodyInit === 'undefined' ? null : request._bodyInit)</span>
     })
   }
   self.fetch.polyfill = true
-})(typeof self !== 'undefined' ? <span class="branch-0 cbranch-no" title="branch not covered">self </span>: this);
+})(typeof self !== 'undefined' ? <span class="branch-0 cbranch-no" title="branch not covered" >self </span>: this);
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 08:20:39 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sun Apr 16 2017 08:18:24 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
