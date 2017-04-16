@@ -1,7 +1,7 @@
 # test coverage for  [whatwg-fetch (v2.0.3)](https://github.com/github/fetch#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-whatwg-fetch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-whatwg-fetch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-whatwg-fetch.svg)](https://travis-ci.org/npmtest/node-npmtest-whatwg-fetch)
 #### A window.fetch polyfill.
 
-[![NPM](https://nodei.co/npm/whatwg-fetch.png?downloads=true)](https://www.npmjs.com/package/whatwg-fetch)
+[![NPM](https://nodei.co/npm/whatwg-fetch.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/whatwg-fetch)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-whatwg-fetch/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,11 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-whatwg-fetch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-whatwg-fetch/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/coverage.html/index.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-whatwg-fetch%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/test-report.html)
+[![test-report](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/test-report.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-whatwg-fetch/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-whatwg-fetch%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-whatwg-fetch/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-whatwg-fetch/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-whatwg-fetch/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/screenCapture.npmPackageListing.svg)
 
@@ -54,17 +54,14 @@
     "main": "fetch.js",
     "maintainers": [
         {
-            "name": "mattandrews",
-            "email": "matt@mattandre.ws"
+            "name": "mattandrews"
         },
         {
-            "name": "mislav",
-            "email": "mislav.marohnic@gmail.com"
+            "name": "mislav"
         }
     ],
     "name": "whatwg-fetch",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/github/fetch.git"
