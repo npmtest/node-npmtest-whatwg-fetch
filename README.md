@@ -1,6 +1,6 @@
 # npmtest-whatwg-fetch
 
-#### test coverage for  [whatwg-fetch (v2.0.3)](https://github.com/github/fetch#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-whatwg-fetch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-whatwg-fetch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-whatwg-fetch.svg)](https://travis-ci.org/npmtest/node-npmtest-whatwg-fetch)
+#### basic test coverage for  [whatwg-fetch (v2.0.3)](https://github.com/github/fetch#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-whatwg-fetch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-whatwg-fetch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-whatwg-fetch.svg)](https://travis-ci.org/npmtest/node-npmtest-whatwg-fetch)
 
 #### A window.fetch polyfill.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-whatwg-fetch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-whatwg-fetch/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-whatwg-fetch/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-whatwg-fetch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-whatwg-fetch/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-whatwg-fetch/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-whatwg-fetch/build/coverage.html/index.html)
 
@@ -78,7 +78,8 @@
     "scripts": {
         "test": "make"
     },
-    "version": "2.0.3"
+    "version": "2.0.3",
+    "bin": {}
 }
 ```
 
